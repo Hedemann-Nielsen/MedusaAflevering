@@ -1,0 +1,27 @@
+@use "../../Styles/Variables.scss" as *;
+
+.regionButton {
+	height: fit-content;
+	width: 110px;
+	margin: auto 5px;
+	height: 30px;
+	padding: 5px;
+	background-color: black;
+	color: $background-color;
+	border: solid 2px $background-color;
+	border-radius: 8px;
+	&:hover {
+		transition-duration: 0.1s;
+		background-color: #3a3a3a;
+	}
+	// remove dropdown arrow
+	/* on Firefox */
+	-moz-appearance: none;
+	/* on Safari, Chrome, Opera */
+	-webkit-appearance: none;
+}
+
+/* on IE10 */
+.regionButton select::-ms-expand {
+	display: none;
+}

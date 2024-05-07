@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Inika:wght@400;700&family=Licorice&display=swap");
+
+$primary-color: #1e1e1e;
+$secondary-color: #4f2919;
+$tertiary-color: #b46538;
+$quaternary-color: #7a4c20;
+
+$text-color: #111111;
+$background-color: #efefef;
+
+*,
+a,
+label,
+input {
+	font-family: "Inika", serif;
+	font-weight: 400;
+	font-style: normal;
+}
+h1,
+h2,
+h3 {
+	font-family: "Licorice", cursive;
+	font-weight: 400;
+	font-style: normal;
+}
+h1 {
+	font-size: 48px;
+	@media (max-width: 768px) {
+		font-size: 28px;
+	}
+}
+h2 {
+	font-size: 64px;
+	padding-top: 30px;
+	@media (max-width: 768px) {
+		font-size: 42px;
+	}
+}
+
+h3 {
+	font-size: 48px;
+	@media (max-width: 768px) {
+		font-size: 30px;
+	}
+}
+h4 {
+	font-size: 42px;
+}
+h5 {
+	font-size: 32px;
+}
+h6 {
+	font-size: 18px;
+}
+p {
+	font-size: 16px;
+}

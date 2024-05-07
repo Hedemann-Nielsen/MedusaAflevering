@@ -1,0 +1,21 @@
+@import "../../Styles/Variables.scss";
+
+.salesPitch {
+	text-align: center;
+	gap: 25px;
+
+	h5 {
+		color: $primary-color;
+		height: 110px;
+		font-family: "Licorice", cursive;
+	}
+	p {
+		height: 170px;
+	}
+	img {
+		width: 100%;
+		height: 321px;
+		object-fit: cover;
+		border-radius: 8px;
+	}
+}

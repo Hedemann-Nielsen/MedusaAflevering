@@ -1,0 +1,141 @@
+@use "../../Styles/Variables.scss" as *;
+.sideCartWrapper {
+	display: flex;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	width: 100vw;
+	height: 100vh;
+	justify-content: end;
+	background-color: #00000078;
+	z-index: 400;
+}
+.sideCart {
+	display: block;
+	position: fixed;
+	right: 0;
+	height: 100vh;
+	background-color: $background-color;
+	z-index: 5000;
+	transition: width 0.5s ease-in-out;
+
+	button {
+		cursor: pointer;
+		border: none;
+		img {
+			padding: 20px;
+			margin: 20px;
+			@media (max-width: 768px) {
+				padding: 0;
+			}
+		}
+	}
+
+	h3 {
+		padding: 0 0 20px 0;
+		text-align: center;
+		color: $primary-color;
+		@media (max-width: 768px) {
+			font-size: 34px;
+			padding: 0 0 20px 0;
+		}
+	}
+
+	.cartLines {
+		display: flex;
+		flex-direction: row;
+		margin: 0 70px;
+
+		h5 {
+			width: 50%;
+
+			@media (max-width: 768px) {
+				width: 100%;
+			}
+		}
+		h5:nth-child(2) {
+			text-align: end;
+		}
+		p {
+			width: 200px;
+			@media (max-width: 768px) {
+				width: 100%;
+				text-align: left;
+			}
+		}
+		p:nth-child(2) {
+			text-align: center;
+		}
+		p:nth-child(3),
+		p:nth-child(4) {
+			text-align: end;
+			@media (max-width: 768px) {
+				text-align: left;
+			}
+		}
+		h6 {
+			width: 100%;
+			font-size: 18px;
+
+			text-align: end;
+		}
+	}
+	.TotalCartLines {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding-top: 50px;
+
+		h5 {
+			width: fit-content;
+			margin: 0 0 0 70px;
+		}
+		a {
+			background-color: transparent;
+			button {
+				margin: 0 70px 0 0;
+
+				width: 100%;
+				height: 40px;
+				background-color: $primary-color;
+				border-radius: 8px;
+				font-size: 18px;
+				text-decoration: none;
+				color: $background-color;
+				padding: 5px 50px;
+				transition: all 0.25s ease-in-out;
+
+				&:hover {
+					transition-duration: 0.1s;
+					background-color: #3a3a3a;
+				}
+			}
+		}
+	}
+	.line {
+		border-top: 2px solid $primary-color;
+		border-radius: 5px;
+		margin: 20px 20%;
+	}
+	.bold {
+		font-weight: bold;
+	}
+	.item {
+		font-size: 18px;
+		width: 50%;
+	}
+	.mis {
+		font-weight: bold;
+	}
+}
+
+//toggle clases
+.open {
+	width: 40%;
+	@media (max-width: 768px) {
+		width: 100%;
+	}
+}
+.close {
+	width: 0%;
+}

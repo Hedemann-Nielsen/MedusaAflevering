@@ -1,0 +1,23 @@
+@use "../../../Styles/Variables.scss" as *;
+
+.footerComponent {
+	// height: 269px;
+
+	div {
+		padding: 50px;
+		@media (max-width: 768px) {
+			padding: 0;
+			padding-bottom: 25px;
+			text-align: center;
+		}
+
+		h6 {
+			padding-bottom: 20px;
+			color: $background-color;
+			font-weight: 600;
+		}
+		p {
+			color: $background-color;
+		}
+	}
+}
